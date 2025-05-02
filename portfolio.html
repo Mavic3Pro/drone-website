@@ -1,1 +1,125 @@
-<!-- Placeholder: You already have the full portfolio.html content in your canvas. -->
+<<!-- portfolio.html (Portfolio Page - Urban Style) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DroneVision | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Merriweather', serif;
+      background-color: #121212;
+      background-image: url('images/philadelphia_cityscape.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      color: #f0f0f0;
+    }
+    header {
+      background: rgba(0,0,0,0.85);
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #00C2CB;
+    }
+    h2 {
+      text-align: center;
+      margin-top: 40px;
+      color: #00C2CB;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      margin: 40px auto;
+      max-width: 1200px;
+    }
+    .gallery-item {
+      position: relative;
+      max-width: 300px;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .gallery-item img,
+    .gallery-item video {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+    }
+    .gallery-item:hover img,
+    .gallery-item:hover video {
+      transform: scale(1.05);
+    }
+    .overlay-text {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      width: 100%;
+      text-align: center;
+      padding: 10px 0;
+      font-weight: bold;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .gallery-item:hover .overlay-text {
+      opacity: 1;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #000;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DroneVision</h1>
+    <nav>
+      <a href="index.html">Frontier</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="services.html">What We Do</a>
+      <a href="about.html">Who I Truly Am</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Urban Flight Showcase</h2>
+    <div class="gallery">
+      <div class="gallery-item">
+        <img src="images/gopro408.jpg" alt="Drone View">
+        <div class="overlay-text">GoPro 408 Aerial</div>
+      </div>
+      <div class="gallery-item">
+        <video controls poster="images/selfhost_thumb.jpg">
+          <source src="videos/city_flyover.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="overlay-text">City Flyover (MP4)</div>
+      </div>
+      <div class="gallery-item">
+        <img src="images/forest_panorama.jpg" alt="Forest Drone View">
+        <div class="overlay-text">Forest Panorama</div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DroneVision. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+-- Placeholder: You already have the full portfolio.html content in your canvas. -->
